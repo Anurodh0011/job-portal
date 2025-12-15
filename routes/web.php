@@ -48,5 +48,8 @@ Route::middleware(['auth', 'verified'])->group(function () {
 
 });
 
+Route::delete('/job-save/delete/{id}','jobSaveDelete')->name('job.save.delete');
+
+
 
 require __DIR__ . '/auth.php';
